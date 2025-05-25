@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Eyis' 2k24 </title>
+    <style>
+        body {
+            background-image:  linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            
+        }
+        	div.header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+        margin: 20px;
+	}
+	.head1 {
+        font-family: cursive;
+		color: rgb(209, 143, 229); font-weight:bold; 		
+        font-size: 40px;
+        text-transform: uppercase;
+        text-shadow: 0px 2px 5px black;
+		animation: focus-in-contract 2s linear 0s 1 normal none;
+        
+	}
+	@keyframes focus-in-contract {
+			
+		0% {
+			letter-spacing:5px;
+			filter:blur(12px);
+			opacity:0;
+		}
+		100% {
+			filter:blur(0);
+			opacity:1;
+		}
+	}
+    .navigation-bar
+        {
+            display: flex;
+            margin-top: 30px;
+            justify-content:center;
+            animation: navi 2s ease 0s 1 normal forwards;
+        }
+    .navigation-bar ul
+        {
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            padding: 0;
+            margin: 0px;
+            box-shadow: 0px 0px 7px black;
+            justify-content: space-around;
+            list-style: none;
+            overflow: hidden;
+            font-size: 20px;
+            overflow: hidden;
+        }
+        .navigation-bar li
+        {
+            padding: 10px 0px;
+            text-transform: uppercase;
+        }
+        .navigation-bar a
+        {
+            padding: 50px 50px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        ul:hover>:not(:hover){ opacity: 0.2;}
+       
+        svg 
+        {
+            font-family:Courier New;
+            width: 100%; height: 100%;
+            letter-spacing: 0;
+        }
+        svg text 
+        {
+            animation: stroke 5s infinite alternate;
+            stroke-width: 2;
+            stroke: #000000;
+            font-size: 50px;
+
+        }
+        @keyframes stroke 
+        {
+            0%   {
+                fill: rgba(179,46,242,0); 
+                stroke-dashoffset: 0%; stroke-dasharray: 0 25%; stroke-width: 2;
+            }
+            50%  {fill: rgba(179,46,242,0); }
+            
+            100% {
+                fill: rgba(189,174,222,1); 
+                stroke-dashoffset: 25%; stroke-dasharray: 50% 0; stroke-width: 2;
+            }
+        }
+        .wrapper {background-color: transparent;font-weight: bold;letter-spacing: 2px;
+                    text-align: center; text-transform: uppercase;}
+        
+form {
+    background: transparent;
+    padding: 20px;
+    border: 2px solid rgb(198, 158, 216);
+    border-radius: 8px ;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    width:fit-content;
+    margin: auto;
+    padding: 20px 60px;
+    font-size:  18px;
+    animation: form_details 2s ease 0s 1 normal forwards;
+}
+@keyframes form_details {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.form_head1, .form_head2{
+    width: 60%;
+    
+}
+form h4 {
+    color: #444;
+    margin-top: 30px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+
+input[type="text"],
+select {
+    
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #c980ed;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+
+
+input[type="text"]:focus,
+select:focus {
+    border-color:  #c980ed;
+    box-shadow: 0 0 5px #070707;
+    outline: none;
+}
+
+input[type=submit] 
+        {
+            border-radius: 4px;
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            border: none;
+            text-align: center;
+            font-size: 20px;
+            padding: 15px 16px;
+            width: 170px;
+            transition: all 0.5s;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+            margin: 20px;
+            
+        }
+input[type=submit]:hover
+{
+    animation: submit_button 0.5s 0s 1 normal forwards;
+}
+
+        @keyframes submit_button {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+input[type="text"],
+select {
+    animation: fadeIn 1 ease-in-out;
+    
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class='header'>
+        <div class='head1' >Department of Information Technology</div>
+    </div>
+
+    <div class="navigation-bar">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="edit.php">Edit</a></li>
+            <li><a href="delete.php">Delete</a></li>
+            <li><a href="show.php">Show</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="wrapper">
+            <svg>
+                <text x="50%" y="50%"  text-anchor="middle">eyis' 2k24 Registration</text>
+            </svg>
+            <h2 style="margin-top: -50px;"> Inter-Collegiate Competitions</h2>
+        </div>
+
+        <form action="php_files/register.php" method="post">
+            
+            College Name:&nbsp; &nbsp; &nbsp; <input type="text" name="clgname" required class="form_head1"/><br><br>
+            <input type="hidden" value="-" name="lot"/>
+            
+            Department Name: &nbsp; <select name="depname" required class="form_head2">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Computer Science SELF">Computer Science SELF</option>
+                <option value="Computer Science REGULAR">Computer Science REGULAR</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Computer Application">Computer Application</option>
+                <option value="CS/IT/BCA">CS/IT/BCA</option>
+                <option value="Data Science">Data Science</option>
+             </select><br><br>
+            
+            <h2> Competitions </h2>
+            <h4>1. Software contest:</h4>
+
+            
+            Name: <input type="text" name="sft_cst_name"/> Class: <input type="text" name="sft_cst_class"/>
+
+            <h4>2. Web Designing:</h4>
+            Name: <input type="text" name="web_des_name"/> Class: <input type="text" name="web_des_class"/>
+
+            <h4>3. Software Debugging:</h4>
+            Name: <input type="text" name="debug_name"/> Class: <input type="text" name="debug_class"/>
+
+            <br><h4>4. Art from E-Waste:</h4>
+            Name: <input type="text" name="art_name[]"/> Class: <input type="text" name="art_class[]"/><br>
+            Name: <input type="text" name="art_name[]"/> Class: <input type="text" name="art_class[]"/>
+
+            <br><h4>5. Tiktok:</h4>
+            Name: <input type="text" name="tiktok_name[]"/> Class: <input type="text" name="tiktok_class[]" /><br>
+            Name: <input type="text" name="tiktok_name[]"/> Class: <input type="text" name="tiktok_class[]"/><br>
+            
+
+            <br><h4>6. Quiz:</h4>
+            Name: <input type="text" name="quiz_name[]"/> Class: <input type="text" name="quiz_class[]" /><br>
+            Name: <input type="text" name="quiz_name[]"/> Class: <input type="text" name="quiz_class[]"/><br>
+            
+
+            <br><h4>7. As You Like It:</h4>
+            Name: <input type="text" name="as_you_like_it_name[]"/> Class: <input type="text" name="as_you_like_it_class[]"/><br>
+            Name: <input type="text" name="as_you_like_it_name[]"/> Class: <input type="text" name="as_you_like_it_class[]"/><br>
+            Name: <input type="text" name="as_you_like_it_name[]"/> Class: <input type="text" name="as_you_like_it_class[]"/><br>
+            Name: <input type="text" name="as_you_like_it_name[]"/> Class: <input type="text" name="as_you_like_it_class[]"/><br>
+            Name: <input type="text" name="as_you_like_it_name[]"/> Class: <input type="text" name="as_you_like_it_class[]"/><br>
+            
+
+            <center><br><input type="submit" value="REGISTER"/></center>
+        </form>
+    </div>
+    <div class="footer" ></div>
+</body>
+</html>
