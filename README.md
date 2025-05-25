@@ -1,4 +1,4 @@
-# 📝 Registration Software – Inter-Collegiate Event Manager
+# 📝 Registration System – Inter-Collegiate Event Manager
 
 This is a **PHP-based mini project** designed to manage **student registrations** for inter-collegiate competitions. The software allows event organizers to register participants, manage their details, and generate categorized PDF reports—all via a clean and user-friendly interface.
 
